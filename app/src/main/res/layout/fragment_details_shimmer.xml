@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shimmer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayouthola"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2hola"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/main_imageView_gradienthola"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/trending_gradient_shape"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2hola"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2hola"
+            app:layout_constraintStart_toStartOf="@+id/imageView2hola"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/view2hola"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="#850914"
+            android:elevation="5dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/materialCardViewhola"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardViewhola"
+            app:layout_constraintStart_toStartOf="@+id/materialCardViewhola"
+            app:layout_constraintTop_toTopOf="@+id/materialCardViewhola"
+            app:layout_constraintVertical_bias="0.0"
+            app:shapeAppearance="@style/ShapeAppearance.App.MediumComponent2" />
+
+        <TextView
+            android:id="@+id/textVieww2hola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/shimmer"
+            android:elevation="5dp"
+
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/textVieww3hola"
+            app:layout_constraintEnd_toEndOf="@+id/view2hola"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView2hola"
+            app:layout_constraintTop_toTopOf="@+id/view2hola"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textVieww3hola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/shimmer"
+
+            android:elevation="5dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textView4hola"
+            app:layout_constraintEnd_toEndOf="@id/textVieww2hola"
+            app:layout_constraintStart_toStartOf="@id/textVieww2hola"
+            app:layout_constraintTop_toBottomOf="@id/textVieww2hola"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textView4hola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/shimmer"
+            android:drawablePadding="8dp"
+            android:elevation="5dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/textView6hola"
+            app:layout_constraintEnd_toEndOf="@+id/textVieww3hola"
+            app:layout_constraintStart_toStartOf="@+id/textVieww3hola"
+            app:layout_constraintTop_toBottomOf="@+id/textVieww3hola" />
+
+        <TextView
+            android:id="@+id/textView6hola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/shimmer"
+            android:elevation="5dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/textView7hola"
+            app:layout_constraintEnd_toEndOf="@id/textView4hola"
+            app:layout_constraintStart_toStartOf="@id/textView4hola"
+            app:layout_constraintTop_toBottomOf="@id/textView4hola" />
+
+        <TextView
+            android:id="@+id/textView7hola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/shimmer"
+            android:drawablePadding="8dp"
+            android:elevation="5dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/textView8hola"
+            app:layout_constraintEnd_toEndOf="@id/textView6hola"
+            app:layout_constraintStart_toStartOf="@id/textView6hola"
+            app:layout_constraintTop_toBottomOf="@id/textView6hola" />
+
+        <TextView
+            android:id="@+id/textView8hola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/shimmer"
+            android:drawablePadding="8dp"
+            android:elevation="5dp"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/view2hola"
+            app:layout_constraintEnd_toEndOf="@id/textView7hola"
+            app:layout_constraintStart_toStartOf="@id/textView7hola"
+            app:layout_constraintTop_toBottomOf="@id/textView7hola" />
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardViewhola"
+            app:layout_constraintStart_toStartOf="@+id/materialCardViewhola"
+            app:layout_constraintTop_toBottomOf="@+id/view2hola">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2hola"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+                <TextView
+                    android:id="@+id/textView10hola"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/shimmer"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txtTrabajoTitlehola"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/txtTrabajoTitlehola"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/shimmer"
+                    android:elevation="2dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txtTrabajoDescripcionhola"
+                    app:layout_constraintEnd_toEndOf="@+id/textView10hola"
+                    app:layout_constraintStart_toStartOf="@+id/textView10hola"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10hola" />
+
+                <TextView
+                    android:id="@+id/txtTrabajoDescripcionhola"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/shimmer"
+                    android:elevation="2dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTrabajoTitlehola"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/txtTrabajoTitlehola"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTrabajoTitlehola" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewhola"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2hola"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2hola"
+            app:layout_constraintTop_toTopOf="@+id/imageView2hola" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2hola"
+            android:layout_width="144dp"
+            android:layout_height="216dp"
+
+            app:cardBackgroundColor="#E7E7E7"
+            app:cardElevation="7dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintBottom_toBottomOf="@+id/view2hola"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2hola"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="200dp"
+                tools:layout_conversion_absoluteWidth="150dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView3hola"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#E7E7E7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearance="@style/ShapeAppearance.App.MediumComponent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>
