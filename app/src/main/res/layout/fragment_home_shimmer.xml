@@ -14,6 +14,7 @@
     tools:showIn="@layout/fragment_home">
 
     <LinearLayout
+        android:id="@+id/rvSuperHerosShimmer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"

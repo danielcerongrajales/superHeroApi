@@ -9,11 +9,11 @@
     tools:context=".ui.view.DetailsFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivPosterBig"
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
+        app:layout_constraintBottom_toBottomOf="@+id/cvContainer"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,14 +21,16 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/main_imageView_gradient"
+        android:id="@+id/ivPosterBig_gradient"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/trending_gradient_shape"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/ivPosterBig"
+        app:layout_constraintEnd_toEndOf="@+id/ivPosterBig"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivPosterBig"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/view2"
@@ -36,15 +38,15 @@
         android:layout_height="200dp"
         android:background="#850914"
         android:elevation="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
-        app:layout_constraintEnd_toEndOf="@+id/materialCardView"
-        app:layout_constraintStart_toStartOf="@+id/materialCardView"
-        app:layout_constraintTop_toTopOf="@+id/materialCardView"
+        app:layout_constraintBottom_toBottomOf="@+id/cvContainer"
+        app:layout_constraintEnd_toEndOf="@+id/cvContainer"
+        app:layout_constraintStart_toStartOf="@+id/cvContainer"
+        app:layout_constraintTop_toTopOf="@+id/cvContainer"
         app:layout_constraintVertical_bias="0.0"
         app:shapeAppearance="@style/ShapeAppearance.App.MediumComponent2" />
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView2"
+        android:id="@+id/cvCointainerPoster"
         android:layout_width="144dp"
         android:layout_height="216dp"
 
@@ -71,7 +73,7 @@
             tools:layout_editor_absoluteY="0dp">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/ivPoster"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="#1339C1"
@@ -90,7 +92,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
+        android:id="@+id/cvContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -144,15 +146,15 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/textVieww3"
+        app:layout_constraintBottom_toTopOf="@id/tvDurability"
         app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toEndOf="@+id/materialCardView2"
+        app:layout_constraintStart_toEndOf="@+id/cvCointainerPoster"
         app:layout_constraintTop_toTopOf="@+id/view2"
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textVieww3"
+        android:id="@+id/tvDurability"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -166,14 +168,14 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/tvPower"
         app:layout_constraintEnd_toEndOf="@id/textVieww2"
         app:layout_constraintStart_toStartOf="@id/textVieww2"
         app:layout_constraintTop_toBottomOf="@id/textVieww2"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvPower"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -187,14 +189,14 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="@+id/textVieww3"
-        app:layout_constraintStart_toStartOf="@+id/textVieww3"
-        app:layout_constraintTop_toBottomOf="@+id/textVieww3" />
+        app:layout_constraintBottom_toTopOf="@+id/tvSpeed"
+        app:layout_constraintEnd_toEndOf="@+id/tvDurability"
+        app:layout_constraintStart_toStartOf="@+id/tvDurability"
+        app:layout_constraintTop_toBottomOf="@+id/tvDurability" />
 
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvSpeed"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -208,13 +210,13 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@id/textView8"
-        app:layout_constraintEnd_toEndOf="@id/textView4"
-        app:layout_constraintStart_toStartOf="@id/textView4"
-        app:layout_constraintTop_toBottomOf="@id/textView4" />
+        app:layout_constraintBottom_toTopOf="@id/tvIntelligence"
+        app:layout_constraintEnd_toEndOf="@id/tvPower"
+        app:layout_constraintStart_toStartOf="@id/tvPower"
+        app:layout_constraintTop_toBottomOf="@id/tvPower" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tvIntelligence"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -227,14 +229,14 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="@id/textView7"
-        app:layout_constraintStart_toStartOf="@id/textView7"
-        app:layout_constraintTop_toBottomOf="@id/textView7" />
+        app:layout_constraintBottom_toTopOf="@+id/tvCombat"
+        app:layout_constraintEnd_toEndOf="@id/tvSpeed"
+        app:layout_constraintStart_toStartOf="@id/tvSpeed"
+        app:layout_constraintTop_toBottomOf="@id/tvSpeed" />
 
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tvCombat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -245,17 +247,18 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintEnd_toEndOf="@+id/tvIntelligence"
+        app:layout_constraintStart_toStartOf="@+id/tvIntelligence"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntelligence" />
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/materialCardView"
-        app:layout_constraintStart_toStartOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="@+id/cvContainer"
+        app:layout_constraintStart_toStartOf="@+id/cvContainer"
         app:layout_constraintTop_toBottomOf="@+id/view2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -267,7 +270,7 @@
             app:layout_constraintTop_toTopOf="@+id/constraintLayout">
 
             <Button
-                android:id="@+id/btnBiografia"
+                android:id="@+id/btnBiography"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -275,13 +278,13 @@
                 android:text="Biografia"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/btnApareincia"
-                app:layout_constraintEnd_toEndOf="@+id/txtTrabajoDescripcion"
-                app:layout_constraintStart_toEndOf="@+id/btnApareincia"
-                app:layout_constraintTop_toTopOf="@+id/btnApareincia" />
+                app:layout_constraintBottom_toBottomOf="@+id/btnAppearance"
+                app:layout_constraintEnd_toEndOf="@+id/tvWorkOccupation"
+                app:layout_constraintStart_toEndOf="@+id/btnAppearance"
+                app:layout_constraintTop_toTopOf="@+id/btnAppearance" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/txtWorkTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -292,14 +295,14 @@
                 android:text="Trabajo"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtTrabajoTitle"
+                app:layout_constraintBottom_toTopOf="@+id/tvWorkBase"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/txtTrabajoTitle"
+                android:id="@+id/tvWorkBase"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -308,13 +311,13 @@
                 android:text="TextView"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/txtTrabajoDescripcion"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
-                app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintBottom_toTopOf="@+id/tvWorkOccupation"
+                app:layout_constraintEnd_toEndOf="@+id/txtWorkTitle"
+                app:layout_constraintStart_toStartOf="@+id/txtWorkTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtWorkTitle" />
 
             <TextView
-                android:id="@+id/txtTrabajoDescripcion"
+                android:id="@+id/tvWorkOccupation"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -323,14 +326,14 @@
                 android:text="TextView"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@id/btnApareincia"
-                app:layout_constraintEnd_toEndOf="@+id/txtTrabajoTitle"
+                app:layout_constraintBottom_toTopOf="@id/btnAppearance"
+                app:layout_constraintEnd_toEndOf="@+id/tvWorkBase"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/txtTrabajoTitle"
-                app:layout_constraintTop_toBottomOf="@+id/txtTrabajoTitle" />
+                app:layout_constraintStart_toStartOf="@+id/tvWorkBase"
+                app:layout_constraintTop_toBottomOf="@+id/tvWorkBase" />
 
             <Button
-                android:id="@+id/btnApareincia"
+                android:id="@+id/btnAppearance"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -341,9 +344,9 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/btnBiografia"
-                app:layout_constraintStart_toStartOf="@+id/txtTrabajoDescripcion"
-                app:layout_constraintTop_toBottomOf="@+id/txtTrabajoDescripcion" />
+                app:layout_constraintEnd_toStartOf="@+id/btnBiography"
+                app:layout_constraintStart_toStartOf="@+id/tvWorkOccupation"
+                app:layout_constraintTop_toBottomOf="@+id/tvWorkOccupation" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2hola"
+            android:id="@+id/ivPosterBigShimmer"
             android:layout_width="0dp"
             android:layout_height="0dp"
 
@@ -29,14 +29,14 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/main_imageView_gradienthola"
+            android:id="@+id/ivPosterBig_gradientShimmer"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/trending_gradient_shape"
             android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2hola"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2hola"
-            app:layout_constraintStart_toStartOf="@+id/imageView2hola"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPosterBigShimmer"
+            app:layout_constraintEnd_toEndOf="@+id/ivPosterBigShimmer"
+            app:layout_constraintStart_toStartOf="@+id/ivPosterBigShimmer"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -69,15 +69,15 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@id/textVieww3hola"
+            app:layout_constraintBottom_toTopOf="@id/tvDurabilityShimmer"
             app:layout_constraintEnd_toEndOf="@+id/view2hola"
-            app:layout_constraintStart_toEndOf="@+id/materialCardView2hola"
+            app:layout_constraintStart_toEndOf="@+id/cvCointainerPosterShimmer"
             app:layout_constraintTop_toTopOf="@+id/view2hola"
             app:layout_constraintVertical_bias="0.0"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
-            android:id="@+id/textVieww3hola"
+            android:id="@+id/tvDurabilityShimmer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -90,14 +90,14 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/textView4hola"
+            app:layout_constraintBottom_toTopOf="@+id/tvPowerShimmer"
             app:layout_constraintEnd_toEndOf="@id/textVieww2hola"
             app:layout_constraintStart_toStartOf="@id/textVieww2hola"
             app:layout_constraintTop_toBottomOf="@id/textVieww2hola"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
-            android:id="@+id/textView4hola"
+            android:id="@+id/tvPowerShimmer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -110,13 +110,13 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@id/textView6hola"
-            app:layout_constraintEnd_toEndOf="@+id/textVieww3hola"
-            app:layout_constraintStart_toStartOf="@+id/textVieww3hola"
-            app:layout_constraintTop_toBottomOf="@+id/textVieww3hola" />
+            app:layout_constraintBottom_toTopOf="@id/tvSpeedShimmer"
+            app:layout_constraintEnd_toEndOf="@+id/tvDurabilityShimmer"
+            app:layout_constraintStart_toStartOf="@+id/tvDurabilityShimmer"
+            app:layout_constraintTop_toBottomOf="@+id/tvDurabilityShimmer" />
 
         <TextView
-            android:id="@+id/textView6hola"
+            android:id="@+id/tvSpeedShimmer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -128,13 +128,13 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@id/textView7hola"
-            app:layout_constraintEnd_toEndOf="@id/textView4hola"
-            app:layout_constraintStart_toStartOf="@id/textView4hola"
-            app:layout_constraintTop_toBottomOf="@id/textView4hola" />
+            app:layout_constraintBottom_toTopOf="@id/tvIntelligenceShimmer"
+            app:layout_constraintEnd_toEndOf="@id/tvPowerShimmer"
+            app:layout_constraintStart_toStartOf="@id/tvPowerShimmer"
+            app:layout_constraintTop_toBottomOf="@id/tvPowerShimmer" />
 
         <TextView
-            android:id="@+id/textView7hola"
+            android:id="@+id/tvIntelligenceShimmer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -147,13 +147,13 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@id/textView8hola"
-            app:layout_constraintEnd_toEndOf="@id/textView6hola"
-            app:layout_constraintStart_toStartOf="@id/textView6hola"
-            app:layout_constraintTop_toBottomOf="@id/textView6hola" />
+            app:layout_constraintBottom_toTopOf="@id/tvCombatShimmer"
+            app:layout_constraintEnd_toEndOf="@id/tvSpeedShimmer"
+            app:layout_constraintStart_toStartOf="@id/tvSpeedShimmer"
+            app:layout_constraintTop_toBottomOf="@id/tvSpeedShimmer" />
 
         <TextView
-            android:id="@+id/textView8hola"
+            android:id="@+id/tvCombatShimmer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -166,9 +166,9 @@
             android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/view2hola"
-            app:layout_constraintEnd_toEndOf="@id/textView7hola"
-            app:layout_constraintStart_toStartOf="@id/textView7hola"
-            app:layout_constraintTop_toBottomOf="@id/textView7hola" />
+            app:layout_constraintEnd_toEndOf="@id/tvIntelligenceShimmer"
+            app:layout_constraintStart_toStartOf="@id/tvIntelligenceShimmer"
+            app:layout_constraintTop_toBottomOf="@id/tvIntelligenceShimmer" />
 
 
         <ScrollView
@@ -189,7 +189,7 @@
                 app:layout_constraintTop_toTopOf="@+id/constraintLayout">
 
                 <TextView
-                    android:id="@+id/textView10hola"
+                    android:id="@+id/txtWorkTitleShimmer"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -199,14 +199,14 @@
                     android:background="@color/shimmer"
                     android:gravity="center"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/txtTrabajoTitlehola"
+                    app:layout_constraintBottom_toTopOf="@+id/tvWorkBaseShimmer"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:id="@+id/txtTrabajoTitlehola"
+                    android:id="@+id/tvWorkBaseShimmer"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -215,13 +215,13 @@
                     android:elevation="2dp"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/txtTrabajoDescripcionhola"
-                    app:layout_constraintEnd_toEndOf="@+id/textView10hola"
-                    app:layout_constraintStart_toStartOf="@+id/textView10hola"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10hola" />
+                    app:layout_constraintBottom_toTopOf="@+id/tvWorkOccupationShimmer"
+                    app:layout_constraintEnd_toEndOf="@+id/txtWorkTitleShimmer"
+                    app:layout_constraintStart_toStartOf="@+id/txtWorkTitleShimmer"
+                    app:layout_constraintTop_toBottomOf="@+id/txtWorkTitleShimmer" />
 
                 <TextView
-                    android:id="@+id/txtTrabajoDescripcionhola"
+                    android:id="@+id/tvWorkOccupationShimmer"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -230,10 +230,10 @@
                     android:elevation="2dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/txtTrabajoTitlehola"
+                    app:layout_constraintEnd_toEndOf="@+id/tvWorkBaseShimmer"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/txtTrabajoTitlehola"
-                    app:layout_constraintTop_toBottomOf="@+id/txtTrabajoTitlehola" />
+                    app:layout_constraintStart_toStartOf="@+id/tvWorkBaseShimmer"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWorkBaseShimmer" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
@@ -249,14 +249,14 @@
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2hola"
+            app:layout_constraintEnd_toEndOf="@+id/ivPosterBigShimmer"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/imageView2hola"
-            app:layout_constraintTop_toTopOf="@+id/imageView2hola" />
+            app:layout_constraintStart_toStartOf="@+id/ivPosterBigShimmer"
+            app:layout_constraintTop_toTopOf="@+id/ivPosterBigShimmer" />
 
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/materialCardView2hola"
+            android:id="@+id/cvCointainerPosterShimmer"
             android:layout_width="144dp"
             android:layout_height="216dp"
 
@@ -283,7 +283,7 @@
                 tools:layout_editor_absoluteY="0dp">
 
                 <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/imageView3hola"
+                    android:id="@+id/ivPosterShimmer"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="#E7E7E7"

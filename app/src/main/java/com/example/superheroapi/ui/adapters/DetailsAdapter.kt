@@ -37,8 +37,8 @@ class DetailsAdapter() :
     class MovieHolder(private val binding: ItemDetailsBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun render(movie: DetailsItem) {
-            binding.textView6.text = movie.title
-            binding.textView3.text = movie.value
+            binding.tvDetailsTitle.text = movie.title
+            binding.tvDetailsContent.text = movie.value
         }
     }
 

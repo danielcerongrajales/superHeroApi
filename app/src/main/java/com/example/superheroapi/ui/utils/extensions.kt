@@ -17,7 +17,7 @@ fun ImageView.loadCoil(url: String?, colorShimmer: String) {
     val request = ImageRequest.Builder(this.context)
         .data("$url")
         .crossfade(true)
-        .error(drawable)
+        .error(R.drawable.error)
         .placeholder(shimmerDrawable(colorShimmer))
         .scale(Scale.FILL)
         .target(

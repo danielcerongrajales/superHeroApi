@@ -47,9 +47,9 @@ class SuperHeroAdapter(private val listener: (ActionUI) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun render(superHero: SuperHeroItemUiState, listener: (ActionUI) -> Unit) {
-            binding.textView.text = superHero.superHeroItem.name
+            binding.tvSuperHero.text = superHero.superHeroItem.name
             superHero.superHeroItem.images.sm.let {
-                binding.imageView.loadCoil(it, "#850914")
+                binding.ivSuperHero.loadCoil(it, "#850914")
             }
             binding.root.setOnClickListener { listener(ActionUI.Click(superHero.superHeroItem)) }
 

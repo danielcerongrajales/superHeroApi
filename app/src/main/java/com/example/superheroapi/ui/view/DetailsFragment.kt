@@ -44,8 +44,8 @@ class DetailsFragment : Fragment() {
         setUpObservers()
         val serializableDataClass = arguments?.getParcelable<Parcelable>("idSuperHero")
         val dataClass = serializableDataClass as SuperHeroItem
-        binding.imageView2.loadCoil(dataClass.images.sm, "#1339C1")
-        binding.imageView3.loadCoil(dataClass.images.sm, "#1339C1")
+        binding.ivPosterBig.loadCoil(dataClass.images.sm, "#1339C1")
+        binding.ivPoster.loadCoil(dataClass.images.sm, "#1339C1")
         materialAlertDialogBuilder = MaterialAlertDialogBuilder(requireContext())
 
         return binding.root
@@ -53,11 +53,11 @@ class DetailsFragment : Fragment() {
 
     private fun setUpObservers() {
         detailsViewModel.powerStatsById.observe(viewLifecycleOwner) {
-            changeTextViewState(binding.textVieww3, "Durabilidad: ${it.durability}")
-            changeTextViewState(binding.textView4, "Poder: ${it.power}")
-            changeTextViewState(binding.textView7, "Velocidad: ${it.speed}")
-            changeTextViewState(binding.textView8, "Inteligencia: ${it.intelligence}")
-            changeTextViewState(binding.textView9, "Combate: ${it.combat}")
+            changeTextViewState(binding.tvDurability, "Durabilidad: ${it.durability}")
+            changeTextViewState(binding.tvPower, "Poder: ${it.power}")
+            changeTextViewState(binding.tvSpeed, "Velocidad: ${it.speed}")
+            changeTextViewState(binding.tvIntelligence, "Inteligencia: ${it.intelligence}")
+            changeTextViewState(binding.tvCombat, "Combate: ${it.combat}")
 
         }
         detailsViewModel.appearanceById.observe(viewLifecycleOwner) {
@@ -89,8 +89,8 @@ class DetailsFragment : Fragment() {
         }
 
         detailsViewModel.workById.observe(viewLifecycleOwner) {
-            binding.txtTrabajoDescripcion.text = "Ocupación: ${it.occupation}"
-            binding.txtTrabajoTitle.text = "Base: ${it.base}"
+            binding.tvWorkOccupation.text = "Ocupación: ${it.occupation}"
+            binding.tvWorkBase.text = "Base: ${it.base}"
         }
         binding.shimmerad.shimmer.stopShimmer()
         binding.shimmerad.shimmer.visibility=GONE
@@ -106,12 +106,12 @@ class DetailsFragment : Fragment() {
     }
 
     private fun setUpListeners() {
-        binding.btnApareincia.setOnClickListener {
+        binding.btnAppearance.setOnClickListener {
             dialogBinding =
                 DialogDetailsBinding.inflate(LayoutInflater.from(requireContext()), null, false)
             launchCustomAlertDialog("Apariencia", list)
         }
-        binding.btnBiografia.setOnClickListener {
+        binding.btnBiography.setOnClickListener {
             dialogBinding =
                 DialogDetailsBinding.inflate(LayoutInflater.from(requireContext()), null, false)
 
@@ -128,11 +128,11 @@ class DetailsFragment : Fragment() {
                 movieAdapterCredits = DetailsAdapter()
                 movieAdapterCredits.submitList(list)
 
-                dialogBinding.recycler.apply {
+                dialogBinding.rvDetails.apply {
                     layoutManager = GridLayoutManager(this.context, 2)
                     setHasFixedSize(true)
                 }
-                dialogBinding.recycler.adapter = movieAdapterCredits
+                dialogBinding.rvDetails.adapter = movieAdapterCredits
             }
             .show()
 

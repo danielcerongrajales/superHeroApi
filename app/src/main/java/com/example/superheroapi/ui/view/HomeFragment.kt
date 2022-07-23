@@ -32,8 +32,7 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-
-        binding.recyclerView.apply {
+        binding.rvSuperHeros.apply {
             layoutManager = GridLayoutManager(this.context, 2)
             setHasFixedSize(true)
 
@@ -63,13 +62,13 @@ class HomeFragment : Fragment() {
 //            viewLifecycleOwner.lifecycle.whenCreated {
                 movieViewModel.stateTwo.collect { uiStatedos ->
                     if (uiStatedos.loadingBar) {
-                        binding.containerShimmer.shimmer.startShimmer()
-                        binding.containerShimmer.shimmer.visibility = View.VISIBLE
-                        binding.recyclerView.visibility = View.GONE
+                        binding.containerShimmerSuperHero.shimmer.startShimmer()
+                        binding.containerShimmerSuperHero.shimmer.visibility = View.VISIBLE
+                        binding.rvSuperHeros.visibility = View.GONE
                     } else {
-                        binding.containerShimmer.shimmer.stopShimmer()
-                        binding.containerShimmer.shimmer.visibility = View.GONE
-                        binding.recyclerView.visibility = View.VISIBLE
+                        binding.containerShimmerSuperHero.shimmer.stopShimmer()
+                        binding.containerShimmerSuperHero.shimmer.visibility = View.GONE
+                        binding.rvSuperHeros.visibility = View.VISIBLE
 
                     }
 
@@ -85,7 +84,7 @@ class HomeFragment : Fragment() {
 
                         }
                     }
-                    binding.recyclerView.adapter = movieAdapter2
+                    binding.rvSuperHeros.adapter = movieAdapter2
 
                 }
 

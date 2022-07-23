@@ -8,26 +8,34 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rvSuperHeros"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:paddingStart="18dp"
         android:paddingEnd="18dp"
+        android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSuperHeros"
         tools:listitem="@layout/item_superhero"
         tools:spanCount="2">
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <include   android:id="@+id/containerShimmer"
-        layout="@layout/fragment_home_shimmer" />
+    <include
+        android:id="@+id/containerShimmerSuperHero"
+        layout="@layout/fragment_home_shimmer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSuperHeros" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvTitleSuperHeros"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -39,7 +47,7 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/rvSuperHeros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

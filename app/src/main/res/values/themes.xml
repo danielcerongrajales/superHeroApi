@@ -16,6 +16,9 @@
         <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
 
     </style>
+<style name="splashTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_background</item>
+</style>
 
     <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.Card</item>
